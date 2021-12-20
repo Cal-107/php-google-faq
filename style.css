@@ -17,14 +17,26 @@
 
 /* header */
 header {
-    padding: 1rem;
-    border-bottom: 1px solid gray;
+    padding: 1rem 1rem 0 1rem;
+    border-bottom: .5px solid gray;
 }
 
 header .list li {
     list-style: none;
+    color: gray;
     margin-right: 2rem;
     font-weight: 300;
+    padding-bottom: 1rem;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-bottom: 2px solid transparent;
+}
+
+header .list li:hover, 
+header .list li:focus {
+    border-bottom: 2px solid blue;
+    transform: translate(5px);
+    color: blue;
 }
 
 .logo-box {
@@ -45,14 +57,20 @@ header .list li {
 
 /* main */
 main {
-    padding: 5rem 0;
+    padding: 3rem 0 5rem 0;
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .container h1{
-    margin: 3rem 0 2rem 0;
+    margin: 2rem 0 1.5rem 0;
+    font-weight: 500;
+}
+
+.container p {
+    font-size: .85rem;
+    font-weight: 300;
 }
